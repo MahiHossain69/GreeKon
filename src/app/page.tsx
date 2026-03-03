@@ -1,9 +1,10 @@
-import Image from "next/image";
+import Navbar from "@/components/layouts/Navbar";
 
 export default function Home() {
   return (
-   <div className="">
-    <h1 className="text-red-400 bg-yellow-300">hello</h1>
-   </div>
+    <div className="min-h-screen bg-black">
+      <Navbar />
+      <main className="container mx-auto p-8"></main>
+    </div>
   );
 }
