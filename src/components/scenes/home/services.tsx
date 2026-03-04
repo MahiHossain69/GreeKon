@@ -62,7 +62,7 @@ const ServiceRow = ({ service }: { service: ServiceItem }) => {
           </h2>
         </div>
 
-        <div className="flex-shrink-0 relative z-20">
+        <div className="shrink-0 relative z-20">
           <ArrowRight
             className="w-12 h-12 md:w-20 md:h-20 text-[#1A2E26] transition-all duration-500 group-hover:scale-110"
             strokeWidth={1.2}

@@ -3,6 +3,7 @@ import HeroSection from "@/components/scenes/home/hero";
 import LearnMoreSection from "@/components/scenes/home/learnmore";
 import ProjectSection from "@/components/scenes/home/project";
 import ServicesSection from "@/components/scenes/home/services";
+import StatesSection from "@/components/scenes/home/states";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <LearnMoreSection />
         <ProjectSection />
         <ServicesSection />
+        <StatesSection />
       </main>
     </div>
   );

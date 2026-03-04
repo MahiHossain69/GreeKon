@@ -101,7 +101,7 @@ const ProjectSection = () => {
             PRESENTING OUR <br /> CREATIVE PROJECT
           </h2>
           <div className="max-w-xs flex flex-col items-start md:items-end gap-6">
-            <p className="text-[#1A2E26]/80 text-sm md:text-base leading-relaxed md:text-right">
+            <p className="text-[#1A2E26]/80 font-inter text-sm md:text-base leading-relaxed md:text-right">
               A productivity work place Workplace productivity relates to the
               amount of work
             </p>
@@ -134,7 +134,7 @@ const ProjectSection = () => {
                   <h3 className="font-tanker text-[#1A2E26] text-2xl md:text-3xl lg:text-4xl uppercase tracking-tight">
                     {project.title}
                   </h3>
-                  <p className="font-sans text-[#1A2E26]/60 text-xs md:text-sm font-medium tracking-wide">
+                  <p className="font-inter text-[#1A2E26]/60 text-xs md:text-sm font-medium tracking-wide">
                     {project.category}
                   </p>
                 </div>
