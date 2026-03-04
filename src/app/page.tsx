@@ -4,6 +4,7 @@ import LearnMoreSection from "@/components/scenes/home/learnmore";
 import ProjectSection from "@/components/scenes/home/project";
 import ServicesSection from "@/components/scenes/home/services";
 import StatesSection from "@/components/scenes/home/states";
+import WhyUsSection from "@/components/scenes/home/whyus";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ProjectSection />
         <ServicesSection />
         <StatesSection />
+        <WhyUsSection />
       </main>
     </div>
   );

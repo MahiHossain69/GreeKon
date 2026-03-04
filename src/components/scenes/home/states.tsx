@@ -118,7 +118,7 @@ const StatesSection = () => {
   ];
 
   return (
-    <section className="bg-[#BFFF07] py-20 lg:py-40">
+    <section className="bg-[#BFFF07] overflow-hidden py-20 lg:py-40">
       <div className="max-w-[1400px] mx-auto px-4 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Left Content */}
         <div className="flex flex-col gap-4">
