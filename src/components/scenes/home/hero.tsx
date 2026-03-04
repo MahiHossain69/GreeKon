@@ -1,4 +1,4 @@
-import React from "react";
+import RippleButton from "@/components/ui/ripple-button";
 import { Phone } from "lucide-react";
 
 function HeroSection() {
@@ -39,10 +39,15 @@ function HeroSection() {
           </h1>
         </div>
 
-        {/* Action Button - Responsive sizing */}
-        <button className="mt-10 sm:mt-14 lg:mt-16 bg-[#BFFF07] hover:bg-white text-black font-tanker text-lg sm:text-xl lg:text-2xl px-10 sm:px-14 lg:px-16 py-3 sm:py-4 rounded-full uppercase transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(191,255,7,0.2)]">
-          Contact Us
-        </button>
+        {/* Action Button - Ripple animation sizing */}
+        <div className="mt-10 sm:mt-14 lg:mt-16">
+          <RippleButton
+            className="bg-[#BFFF07] text-black font-tanker text-lg sm:text-xl lg:text-2xl px-10 sm:px-14 lg:px-16 py-3 sm:py-4 rounded-full uppercase transition-all duration-300 transform hover:scale-105 shadow-[0_10px_30px_rgba(191,255,7,0.2)]"
+            rippleColor="rgba(0,0,0,0.4)"
+          >
+            Contact Us
+          </RippleButton>
+        </div>
       </div>
 
       {/* Floating Phone Icon Button (Right) - Responsive position */}
