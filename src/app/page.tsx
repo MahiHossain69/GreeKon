@@ -6,6 +6,7 @@ import ProjectSection from "@/components/scenes/home/project";
 import ServicesSection from "@/components/scenes/home/services";
 import StatesSection from "@/components/scenes/home/states";
 import WhyUsSection from "@/components/scenes/home/whyus";
+import ClientSection from "@/components/scenes/home/client";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <StatesSection />
         <WhyUsSection />
         <FeedbackSection />
+        <ClientSection />
       </main>
     </div>
   );

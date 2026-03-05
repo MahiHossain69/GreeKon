@@ -160,3 +160,81 @@ export const StarIcon = ({
     </svg>
   );
 };
+
+export const SliderArrow = ({
+  direction = "right",
+  className = "",
+  ...props
+}: {
+  direction?: "left" | "right";
+  className?: string;
+} & React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${direction === "left" ? "rotate-180" : ""} ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  );
+};
+
+export const FlowerMask = () => (
+  <svg width="0" height="0">
+    <defs>
+      <clipPath id="flower-mask" clipPathUnits="objectBoundingBox">
+        <path d="M0.5,0 L0.6,0.35 L0.95,0.25 L0.75,0.5 L1,0.6 L0.65,0.65 L0.5,1 L0.35,0.65 L0,0.6 L0.25,0.5 L0.05,0.25 L0.4,0.35 Z" />
+      </clipPath>
+      <clipPath id="wavy-mask" clipPathUnits="objectBoundingBox">
+        <path d="M0.5,0 C0.6,0 0.7,0.1 0.8,0.1 C0.9,0.1 1,0 1,0.2 C1,0.4 0.9,0.5 0.9,0.6 C0.9,0.7 1,0.8 0.8,0.9 C0.7,1 0.6,0.9 0.5,0.9 C0.4,0.9 0.3,1 0.2,0.9 C0,0.8 0.1,0.7 0.1,0.6 C0.1,0.5 0,0.4 0,0.2 C0,0 0.1,0.1 0.2,0.1 C0.3,0.1 0.4,0 0.5,0" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const ArrowIconLeft = ({
+  className = "",
+  ...props
+}: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      viewBox="0 0 13 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`arrow ${className}`}
+      {...props}
+    >
+      <path
+        d="M7 11C6.69357 8.85497 5.20151 7.06717 3.1459 6.38196L2 6M2 6L13 6M2 6L3.1459 5.61803C5.20151 4.93283 6.69357 3.14503 7 1"
+        stroke="currentColor"
+        strokeWidth={1.2}
+      />
+    </svg>
+  );
+};
+export const ArrowIconRight = ({
+  className = "",
+  ...props
+}: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      viewBox="0 0 13 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`arrow ${className}`}
+      {...props}
+    >
+      <path
+        d="M6 1C6.30643 3.14503 7.79849 4.93283 9.8541 5.61803L11 6M11 6H0M11 6L9.8541 6.38197C7.79849 7.06717 6.30643 8.85497 6 11"
+        stroke="currentColor"
+        strokeWidth={1.2}
+      />
+    </svg>
+  );
+};
