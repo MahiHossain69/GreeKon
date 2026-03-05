@@ -1,4 +1,5 @@
 import Navbar from "@/components/layouts/Navbar";
+import FeedbackSection from "@/components/scenes/home/feedback";
 import HeroSection from "@/components/scenes/home/hero";
 import LearnMoreSection from "@/components/scenes/home/learnmore";
 import ProjectSection from "@/components/scenes/home/project";
@@ -17,6 +18,7 @@ export default function Home() {
         <ServicesSection />
         <StatesSection />
         <WhyUsSection />
+        <FeedbackSection />
       </main>
     </div>
   );
