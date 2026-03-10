@@ -238,3 +238,44 @@ export const ArrowIconRight = ({
     </svg>
   );
 };
+
+export const CurveGridShape = ({
+  className = "",
+  ...props
+}: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      fill="none"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M-10,50 Q25,-10 110,50"
+        stroke="#CAFF33"
+        strokeWidth={0.1}
+        fill="none"
+      />
+      <path
+        d="M-10,70 Q25,120 110,70"
+        stroke="#CAFF33"
+        strokeWidth={0.1}
+        fill="none"
+      />
+      <path
+        d="M20,-10 Q-10,50 20,110"
+        stroke="#CAFF33"
+        strokeWidth={0.1}
+        fill="none"
+      />
+      <path
+        d="M80,-10 Q110,50 80,110"
+        stroke="#CAFF33"
+        strokeWidth={0.1}
+        fill="none"
+      />
+    </svg>
+  );
+};
