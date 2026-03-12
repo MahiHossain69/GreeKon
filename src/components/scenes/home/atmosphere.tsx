@@ -49,7 +49,7 @@ const sampleImages = [
 
 const AtmosphereSection = () => {
   return (
-    <section className="relative w-full h-screen bg-[#0A1A14] overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative w-full h-[calc(100vh-120px)] bg-[#0A1A14] overflow-hidden flex flex-col items-center justify-center">
       {/* Decorative Background Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <CurveGridShape />
