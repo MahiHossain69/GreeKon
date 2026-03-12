@@ -58,45 +58,44 @@ const ClientSection = () => {
   const currentCity = cities[currentIndex];
 
   return (
-    <section className="relative bg-[#CAFF33] py-24 px-4 md:px-8 overflow-hidden min-h-[700px] flex items-center">
-      <FlowerMask />
-      <div className="max-w-7xl mx-auto w-full relative z-10">
+    <section className="relative bg-[#CAFF33] py-16 md:py-24 px-4 md:px-8 overflow-hidden min-h-[600px] md:min-h-[700px] flex items-center">
+      <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col items-center md:items-start">
         {/* Header Section */}
-        <div className="absolute top-0 left-0 md:relative md:mb-12">
-          <p className="font-sacramento text-6xl text-[#2F3E2F] mb-0 ">
+        <div className="relative mb-10 md:mb-12 text-center md:text-left w-full">
+          <p className="font-sacramento text-5xl md:text-6xl text-[#2F3E2F] mb-0">
             Top cities
           </p>
-          <h2 className="font-tanker text-5xl md:text-7xl lg:text-8xl text-[#2F3E2F] leading-[0.9] mt-[-10px]">
+          <h2 className="font-tanker text-4xl md:text-7xl lg:text-8xl text-[#2F3E2F] leading-[0.9] mt-[-8px] md:mt-[-10px]">
             GREEKON <br /> EXPANDS TO 04 <br /> CITIES
           </h2>
         </div>
 
         {/* Central Content */}
-        <div className="relative mt-20 md:mt-0 flex flex-col md:flex-row items-center justify-center">
+        <div className="relative w-full flex flex-col items-center justify-center">
           {/* Navigation Arrows */}
-          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-4 md:px-0 z-30 pointer-events-none">
+          <div className="absolute inset-x-0 top-[40%] md:top-1/2 -translate-y-1/2 flex justify-between px-2 md:px-0 z-30 pointer-events-none">
             <Button
               onClick={prevSlide}
-              className="w-12 h-12 md:w-16 md:h-16 rounded-full border border-black flex items-center justify-center hover:bg-[#2F3E2F] group transition-colors pointer-events-auto bg-transparent group"
+              className="w-10 h-10 md:w-16 md:h-16 rounded-full border border-black flex items-center justify-center hover:bg-[#2F3E2F] group transition-colors pointer-events-auto bg-transparent"
             >
               <ArrowIconLeft
                 direction="left"
-                className="w-6 h-6 text-[#2F3E2F] group-hover:text-white"
+                className="w-5 h-5 md:w-6 md:h-6 text-[#2F3E2F] group-hover:text-white"
               />
             </Button>
             <Button
               onClick={nextSlide}
-              className="w-12 h-12 md:w-16 md:h-16 rounded-full border border-black flex items-center justify-center hover:bg-[#2F3E2F] group transition-colors pointer-events-auto bg-transparent group"
+              className="w-10 h-10 md:w-16 md:h-16 rounded-full border border-black flex items-center justify-center hover:bg-[#2F3E2F] group transition-colors pointer-events-auto bg-transparent"
             >
               <ArrowIconRight
                 direction="right"
-                className="w-6 h-6 text-[#2F3E2F] group-hover:text-white"
+                className="w-5 h-5 md:w-6 md:h-6 text-[#2F3E2F] group-hover:text-white"
               />
             </Button>
           </div>
 
           {/* Masked Image and Info Card */}
-          <div className="relative w-full max-w-[600px] aspect-square flex items-center justify-center">
+          <div className="relative w-full max-w-[320px] md:max-w-[600px] aspect-square flex flex-col items-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -104,7 +103,7 @@ const ClientSection = () => {
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 exit={{ opacity: 0, scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="relative w-[80%] h-[80%] md:w-full md:h-full"
+                className="relative w-full h-full flex flex-col items-center"
               >
                 {/* Masked Image */}
                 <div className="w-full h-full relative overflow-hidden">
@@ -117,15 +116,15 @@ const ClientSection = () => {
                   />
                 </div>
 
-                {/* Info Card - Overlaid on image bottom-left */}
-                <div className="absolute bottom-4 left-[-10%] md:left-0 bg-[#162C21] text-white p-6 md:p-8 w-[250px] md:w-[350px] z-20">
-                  <h3 className="font-tanker text-4xl md:text-5xl mb-4 tracking-wider">
+                {/* Info Card */}
+                <div className="relative mt-[-40px] md:mt-0 md:absolute md:bottom-4 md:left-0 bg-[#162C21] text-white p-6 md:p-8 w-[90%] md:w-[350px] z-20 shadow-2xl">
+                  <h3 className="font-tanker text-3xl md:text-5xl mb-4 tracking-wider">
                     {currentCity.name}
                   </h3>
                   <p className="font-tanker text-sm md:text-base text-gray-300 uppercase mb-4">
                     {currentCity.subText}
                   </p>
-                  <p className="font-inter text-xs md:text-sm text-gray-400 leading-relaxed">
+                  <p className="font-inter text-[10px] md:text-sm text-gray-400 leading-relaxed">
                     {currentCity.description}
                   </p>
                 </div>

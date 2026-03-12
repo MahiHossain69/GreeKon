@@ -49,6 +49,14 @@
   --font-tanker: var(--font-tanker);
 }
 
+@utility clip-footer-btn {
+  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
+
+  @media (width >= theme(--breakpoint-md)) {
+    clip-path: polygon(80px 0, 100% 0, 100% 100%, 0 100%, 0 80px);
+  }
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
