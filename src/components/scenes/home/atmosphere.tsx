@@ -91,7 +91,7 @@ const AtmosphereSection = () => {
       </div>
 
       <div className="absolute bottom-10 left-0 right-0 text-center pointer-events-none opacity-40">
-        <p className="text-white font-mono text-[10px] uppercase tracking-[0.2em]">
+        <p className="text-white font-inter text-[10px] uppercase tracking-[0.2em]">
           Scroll or drag to explore the space
         </p>
       </div>

@@ -8,6 +8,7 @@ import StatesSection from "@/components/scenes/home/states";
 import WhyUsSection from "@/components/scenes/home/whyus";
 import ClientSection from "@/components/scenes/home/client";
 import AtmosphereSection from "@/components/scenes/home/atmosphere";
+import BlogSection from "@/components/scenes/home/blog";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <FeedbackSection />
         <ClientSection />
         <AtmosphereSection />
+        <BlogSection />
       </main>
     </div>
   );
