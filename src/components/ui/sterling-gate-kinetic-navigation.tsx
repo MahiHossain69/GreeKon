@@ -221,7 +221,10 @@ export function KineticNavigation({ isOpen, onClose }: KineticNavigationProps) {
               <div className="container mx-auto px-6 flex flex-col justify-center min-h-screen">
                 <ul className="menu-list flex flex-col space-y-6">
                   <li className="menu-list-item overflow-hidden" data-shape="1">
-                    <Link href="#" className="nav-link w-inline-block block">
+                    <Link
+                      href="/about-us"
+                      className="nav-link w-inline-block block"
+                    >
                       <p
                         className="nav-link-text font-tanker text-7xl md:text-9xl uppercase leading-none"
                         data-menu-fade
