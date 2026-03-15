@@ -273,12 +273,25 @@ export function KineticNavigation({ isOpen, onClose }: KineticNavigationProps) {
                     </Link>
                   </li>
                   <li className="menu-list-item overflow-hidden" data-shape="5">
-                    <Link href="#" className="nav-link w-inline-block block">
+                    <Link
+                      href="/contact"
+                      className="nav-link w-inline-block block"
+                    >
                       <p
                         className="nav-link-text font-tanker text-7xl md:text-9xl uppercase leading-none"
                         data-menu-fade
                       >
                         Contact us
+                      </p>
+                    </Link>
+                  </li>
+                  <li className="menu-list-item overflow-hidden" data-shape="5">
+                    <Link href="/404" className="nav-link w-inline-block block">
+                      <p
+                        className="nav-link-text font-tanker text-7xl md:text-9xl uppercase leading-none"
+                        data-menu-fade
+                      >
+                        404
                       </p>
                     </Link>
                   </li>

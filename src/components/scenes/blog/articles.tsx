@@ -69,7 +69,7 @@ const BlogCard = ({ article }: { article: (typeof articles)[0] }) => {
       viewport={{ once: true }}
       className="group cursor-pointer"
     >
-      <div className="relative aspect-[4/3] overflow-hidden mb-4">
+      <div className="relative aspect-4/3 overflow-hidden mb-4">
         <Image
           src={article.image}
           alt={article.title}
