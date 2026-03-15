@@ -48,7 +48,7 @@ const PartnersSection = () => {
     <section className="bg-[#FBF9F1] py-20 overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-16 text-center md:text-left">
           <motion.h3
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ const PartnersSection = () => {
         </div>
 
         {/* Team Grid/Row */}
-        <div className="flex flex-wrap lg:flex-nowrap gap-6 overflow-x-auto pb-10 scrollbar-hide">
+        <div className="flex flex-wrap lg:flex-nowrap gap-6 justify-center lg:justify-start overflow-x-auto pb-10 scrollbar-hide">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}

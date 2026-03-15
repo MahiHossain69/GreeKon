@@ -7,6 +7,7 @@ import MemberSection from "@/components/scenes/about-us/member";
 import PartnersSection from "@/components/scenes/about-us/partners";
 import Navbar from "@/components/layouts/Navbar";
 import FooterSection from "@/components/scenes/home/footer";
+import PartnersDownSection from "@/components/scenes/about-us/partners-down";
 
 const AboutPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPage = () => {
       <WhyWe />
       <MemberSection />
       <PartnersSection />
+      <PartnersDownSection />
       <FooterSection />
     </main>
   );
