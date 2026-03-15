@@ -1,6 +1,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { CurveIcon } from "../shared/svgs";
+import { CurveIcon } from "./svgs";
 
 interface RetroTvErrorProps extends React.HTMLAttributes<HTMLDivElement> {
   errorCode?: string;

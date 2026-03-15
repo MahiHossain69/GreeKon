@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { PricingSection } from "@/components/ui/pricing-cards";
+import { PricingSection } from "@/components/shared/pricing-cards";
 
 const demoPlans = [
   {

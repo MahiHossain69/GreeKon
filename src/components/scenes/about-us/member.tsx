@@ -5,7 +5,7 @@ import {
   ContainerInset,
   ContainerScroll,
   ContainerSticky,
-} from "@/components/ui/animated-video-on-scroll";
+} from "../../shared/animated-video-on-scroll";
 import Image from "next/image";
 
 const MemberSection = () => {

@@ -15,7 +15,7 @@ import NumberFlow from "@number-flow/react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-import ShimmerButton from "@/components/ui/shimmer-button";
+import ShimmerButton from "@/components/shared/shimmer-button";
 
 // --- UTILITY HOOKS ---
 

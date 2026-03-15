@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import RippleButton from "@/components/ui/ripple-button";
+import RippleButton from "@/components/shared/ripple-button";
 import { motion } from "framer-motion";
 
 const LogoItem1 = () => (

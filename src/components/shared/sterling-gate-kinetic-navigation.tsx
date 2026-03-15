@@ -10,9 +10,9 @@ import {
   BgShapeOne,
   BgShapeThree,
   BgShapeTwo,
-} from "../shared/svgs";
+} from "./svgs";
 import Link from "next/link";
-import { Button } from "./button";
+import { Button } from "../ui/button";
 
 // Register GSAP Plugins safely
 if (typeof window !== "undefined") {

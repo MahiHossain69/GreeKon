@@ -1,5 +1,8 @@
 import React from "react";
-import { CardsParallax, type iCardItem } from "@/components/ui/scroll-cards";
+import {
+  CardsParallax,
+  type iCardItem,
+} from "@/components/shared/scroll-cards";
 
 const projectItems: iCardItem[] = [
   {

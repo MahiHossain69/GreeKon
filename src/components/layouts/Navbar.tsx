@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { ShoppingBag, Menu as MenuIcon } from "lucide-react";
-import { KineticNavigation } from "../ui/sterling-gate-kinetic-navigation";
+import { KineticNavigation } from "../shared/sterling-gate-kinetic-navigation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { RetroTvError } from "@/components/ui/404-error-page";
+import { RetroTvError } from "@/components/shared/404-error-page";
 import Navbar from "@/components/layouts/Navbar";
 import FooterSection from "@/components/scenes/home/footer";
 

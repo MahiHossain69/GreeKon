@@ -1,4 +1,4 @@
-import RippleButton from "@/components/ui/ripple-button";
+import RippleButton from "@/components/shared/ripple-button";
 import { Phone } from "lucide-react";
 
 function HeroSection() {
