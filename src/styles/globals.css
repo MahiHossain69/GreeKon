@@ -44,6 +44,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
+  --color-destructive-foreground: oklch(1 0 0);
+  --color-color-destructive-foreground: var(--color-destructive-foreground);
+
   --font-inter: var(--font-inter);
   --font-sacramento: var(--font-sacramento);
   --font-tanker: var(--font-tanker);
@@ -74,6 +77,7 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
@@ -121,6 +125,7 @@
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(1 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
@@ -253,6 +258,15 @@ button {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+@keyframes shimmer2 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
 }
 
 .main {
