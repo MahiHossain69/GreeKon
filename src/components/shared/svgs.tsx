@@ -279,3 +279,20 @@ export const CurveGridShape = ({
     </svg>
   );
 };
+
+export const CurveIcon = ({
+  className = "",
+  ...props
+}: SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      viewBox="0 0 189.929 189.929"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`curve_svg ${className}`}
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M70.343,70.343c-30.554,30.553-44.806,72.7-39.102,115.635l-29.738,3.951C-5.442,137.659,11.917,86.34,49.129,49.13C86.34,11.918,137.664-5.445,189.928,1.502l-3.95,29.738C143.041,25.54,100.895,39.789,70.343,70.343z" />
+    </svg>
+  );
+};
