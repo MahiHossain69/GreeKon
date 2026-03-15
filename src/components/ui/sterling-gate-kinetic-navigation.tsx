@@ -234,7 +234,10 @@ export function KineticNavigation({ isOpen, onClose }: KineticNavigationProps) {
                     </Link>
                   </li>
                   <li className="menu-list-item overflow-hidden" data-shape="2">
-                    <Link href="#" className="nav-link w-inline-block block">
+                    <Link
+                      href="/our-work"
+                      className="nav-link w-inline-block block"
+                    >
                       <p
                         className="nav-link-text font-tanker text-7xl md:text-9xl uppercase leading-none"
                         data-menu-fade
